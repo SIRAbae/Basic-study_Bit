@@ -1,0 +1,9 @@
+﻿  Source.c
+  exam.c
+c:\단기 43차\c 언어\souce.c\souce.c\exam.c(35): warning C4101: 'arr': unreferenced local variable
+c:\단기 43차\c 언어\souce.c\souce.c\exam.c(146): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+c:\단기 43차\c 언어\souce.c\souce.c\exam.c(149): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+c:\단기 43차\c 언어\souce.c\souce.c\exam.c(164): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
+  Generating Code...
+  souce.c.vcxproj -> C:\단기 43차\C 언어\souce.c\Debug\souce.c.exe
+  souce.c.vcxproj -> C:\단기 43차\C 언어\souce.c\Debug\souce.c.pdb (Full PDB)
