@@ -1,0 +1,128 @@
+package example3;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class MenuControl {
+	private ArrayList<Menu> datalist = new ArrayList<Menu>();
+	private Scanner scan = new Scanner(System.in);
+	
+	private void PrintAll() {
+		System.out.println("\t저장개수 :" + datalist.size());
+		for(int i=0; i< datalist.size(); i++) {
+			Menu menu = datalist.get(i);
+			
+			System.out.printf("\t[%d]", i);
+			System.out.println(menu);  //stutoString() 이랑 같은 코드
+		}
+	}
+	
+	private void Insert() {
+		
+		try {
+		System.out.println(">> 메뉴명 :");
+		String name = scan.nextLine();
+		System.out.print(">> 가격 : ");
+		int price = Integer.parseInt(scan.nextLine());
+		
+		Menu menu = new Menu(name, price);
+		
+		datalist.add(menu);
+		
+		System.out.println(">> 저장되었습니다.");
+		}
+		catch(Exception ex) {
+			System.out.println("저장 실패 : " + ex.getMessage());
+		}
+	}
+		
+	private void Select() {
+			//이름을 가지고 검색
+		try {	
+		System.out.println(">> 검색이름 :");
+			String name = scan.nextLine();
+			
+			Menu menu = NameToStudent(name);
+			
+			menu.Print();
+	}
+		catch (Exception ex) {
+			System.out.println("저장실패 : " + ex.getMessage());
+		}
+	}
+	
+	
+	
+	public void Update() {
+		//이름을 가지고 검색 후 학년 수정
+		try {
+		System.out.println(">> 수정할 이름 입력 :");
+		String name = scan.nextLine();
+		System.out.println(">> 수정할 학년 입력 :");
+		int price = Integer.parseInt(scan.nextLine());
+		
+		Menu menu = NameToStudent(name);
+		menu.setprice(price);
+		
+		System.out.println("변경되었습니다.");
+		}
+		catch(Exception ex) {
+			System.out.println("수정 오류 : " + ex.getMessage());
+		}
+	}
+	
+	
+	
+
+
+	public void Delete() {
+		//이름을 가지고 검색 후 학년 삭제
+		try {
+				System.out.println(">> 수정할 이름 입력 :");
+				String name = scan.nextLine();
+				
+				Menu menu = NameToStudent(name);
+
+				datalist.remove(menu);
+				
+				System.out.println("삭제되었습니다.");
+			}
+		catch (Exception ex) {
+			System.out.println("삭재 오류 : " + ex.getMessage());
+		
+			}
+		}
+	
+	private Menu NameToStudent (String name) throws Exception {
+		for (Menu menu : datalist) {
+			if(menu.getName().equals(name) == true) {
+				return menu;
+				}
+			}
+		throw new Exception("없다.");
+	}
+	
+	public void Run() {
+		while(true) {
+			MenuPrint();
+			switch(scan.nextLine()) {
+			case "1" : Insert();  break; 
+			case "2" : Select();  break;
+			case "3" : Update();  break;
+			case "4" : Delete();  break;
+			case "5" : break;
+			default : System.out.println("잘못 입력");
+			}
+			PrintAll();
+		}
+	}
+	
+	
+	private void MenuPrint() {
+		System.out.println("============================================================");
+		System.out.println("[1] Insert  [2] Select  [3] Update [4] Delete [5 Exit]");
+		System.out.println("============================================================");
+
+	}
+}

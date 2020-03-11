@@ -1,0 +1,52 @@
+package example3;
+
+public class Menu {
+	private String name;  //이름
+	private int price;   // 가격
+	private int selcount; // 판매수량
+	
+	
+	public Menu(String _name, int _price) {
+			setName(_name);
+			price = _price;
+			selcount = 0;
+		}
+	
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public int getprice() {
+		return price;
+	}
+
+	public void setprice(int price) {
+			this.price = price;
+		}
+	
+	public int getselcount() {
+		return price;
+	}
+
+	public void setselcount(int selcount) {
+			this.selcount = selcount;
+		}
+
+	
+	public void Print() {
+		System.out.println("이름 : " + name);
+		System.out.println("학번 : " + grad);
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("%s\t%d", name, grad);
+	}
+}
+
+}

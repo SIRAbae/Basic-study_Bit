@@ -1,0 +1,43 @@
+package example2;
+
+public class MyData {
+	private String name;
+	private int old;
+	private String object;
+	
+	public MyData(String n, int o, String obj) {
+		name = n;
+		old = o;
+		object = obj;
+	}
+	
+	public void Print() {
+		System.out.printf ("이름 : " + name + "\t");
+		System.out.printf ("나이 : " + old + "\t");
+		System.out.printf ("과목 : " + object + "\t");
+		
+	}
+
+	
+	
+	public String toString() {
+		return String.format("%04d-%02d-%02d",
+				year, month, day);
+	}
+	
+	
+	public boolean equals(Object obj) {
+		MyDate d = (MyDate)obj;
+		
+		if(year == d.year && month == d.month && day == d.day)
+			return true;
+		else
+			return false;
+	}
+	//@Override
+	
+	//clone2
+	public Object clone() throws CloneNotSupportedException{
+		return super.clone();
+	}
+}

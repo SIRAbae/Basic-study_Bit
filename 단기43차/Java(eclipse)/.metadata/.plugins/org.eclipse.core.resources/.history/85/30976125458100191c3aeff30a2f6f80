@@ -1,0 +1,19 @@
+package example3;
+
+public class Sol extends Person implements Training {
+	public Sol(String _name) {
+		super(_name);
+		
+	}
+
+	@Override
+	public void training() {
+		System.out.println(toString() + ":" + "이 훈련한다.");
+	}
+	
+	@Override
+	public void Print() {
+		System.out.println("직업 :"+ getJob());
+		System.out.println("군번 :"+ getNumber());
+	}
+}

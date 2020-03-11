@@ -1,0 +1,16 @@
+package example3;
+
+public class Job {
+	private String name;
+	
+	public Job(String _name) {
+		name = _name;
+	}
+	@Override
+	public String toString() {
+		return name;
+		
+	}
+
+	
+}
