@@ -1,0 +1,5 @@
+﻿  exam.c
+d:\201830501\0328\0328\exam.c(48): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int (*)[3]'
+d:\201830501\0328\0328\exam.c(48): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'int (*)[3]'
+  0328.vcxproj -> D:\201830501\0328\Debug\0328.exe
+  0328.vcxproj -> D:\201830501\0328\Debug\0328.pdb (Full PDB)
