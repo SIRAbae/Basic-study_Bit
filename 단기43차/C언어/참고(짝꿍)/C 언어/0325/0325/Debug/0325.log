@@ -1,8 +1,0 @@
-﻿  Source.c
-  exam.c
-c:\단기 43차\c 언어\0325\0325\exam.c(23): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int (*)[3]'
-c:\단기 43차\c 언어\0325\0325\exam.c(24): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int (*)[3]'
-c:\단기 43차\c 언어\0325\0325\exam.c(25): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
-  Generating Code...
-  0325.vcxproj -> C:\단기 43차\C 언어\0325\Debug\0325.exe
-  0325.vcxproj -> C:\단기 43차\C 언어\0325\Debug\0325.pdb (Full PDB)

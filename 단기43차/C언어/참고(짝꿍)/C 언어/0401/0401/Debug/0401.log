@@ -1,7 +1,0 @@
-﻿  Source.c
-  exam.c
-c:\단기 43차\c 언어\0401\0401\exam.c(19): warning C4101: 'per2': unreferenced local variable
-c:\단기 43차\c 언어\0401\0401\exam.c(20): warning C4101: 'per3': unreferenced local variable
-  Generating Code...
-  0401.vcxproj -> C:\단기 43차\C 언어\0401\Debug\0401.exe
-  0401.vcxproj -> C:\단기 43차\C 언어\0401\Debug\0401.pdb (Full PDB)
